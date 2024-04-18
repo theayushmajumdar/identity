@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <title>Ayush Majumdar | Experience</title>
+    <style>
+
+body {
+    background-color: #333;
+}
+
+.home-btn img {
+    width: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+    
+    #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+   .section-title {
+    color: aliceblue;
+    text-align: center;
+}
+    .timeline {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #eae3e3;
+    }
+    
+    .block {
+        width: calc(50% - 20px);
+        background: #8f8c8c;
+        border: 2px solid #262020;
+        margin: 10px 0;
+        padding: 24px;
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        transition: .3s linear;
+    }
+    
+    .block img {
+        background-color: #8f8c8c;
+        height: 96px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    
+    .block a {
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+        border: none;
+        transition: .5s;
+    }
+    
+    .block a:hover {
+        opacity: .8;
+    }
+    
+    .block h3 {
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .block p {
+        color: aliceblue;
+        font-size: 15px;
+    }
+    
+    .footer {
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+    color: #8f8c8c;
+    font-size: larger;
+}
+
+.footer hr {
+    margin: 1rem auto;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__text {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="home-btn"><img src="assets/logo.png" alt=""></a>
+
+    <section id="experience">
+        <div class="inner-width">
+            <h1 class="section-title">Experience :</h1>
+    
+            <div class="timeline">
+                <!--DRDO -->
+                <div class="block">
+                    <img src="/assets/exp/drdo_logo.png" alt="Defence Research & Development Organisation" draggable="false">
+                    <h3><a href="https://www.drdo.gov.in/drdo/labs-and-establishments/institute-systems-studies-analyses-issa">Defence Research & Development Organisation, ISSA Lab</a></h3>
+                    <h3>Delhi, India | June 2023 - August 2023</h3>
+                    <p>I worked as a Summer Intern in the Core Software team of DRDO ISSA lab, during summer 2023.
+                    <br> Tech and Tools Used : Java, Spring boot, JDBC, MySQL, REST API, Git, Intellij Idea, Postman.
+                    </p>
+                </div>
+    
+                <!-- Freelance -->
+                <div class="block">
+                    <img src="/assets/logo.png" alt="Freelancing" draggable="false">
+                    <h3><a href="./">Freelance</a></h3>
+                    <h3>Remote | January 2024 - Present</h3>
+                    <p>Efficiently delivered high-quality projects on time, exceeding client expectations and building network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+          <p class="footer__text">
+            &copy; <span id="year"></span> - Made with &hearts; by
+            <a
+              href="https://github.com/theayushmajumdar"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ayush Majumdar</a
+            >. 
+          </p>
+        </div>
+      </footer>
+      <!-- END Footer Section -->
+    
+</body>
+</html>
