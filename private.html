@@ -10,9 +10,16 @@
 * { 
     box-sizing: border-box; 
 }
-body{
-    
+
+body {
     background-color: #333;
+}
+
+.home-btn img {
+    width: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .container {
@@ -27,6 +34,30 @@ body{
     color: aliceblue;
     text-align: center;
     margin-bottom: 20px;
+    padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Styles for tablets and larger devices */
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Styles for laptops and larger devices */
+  .text {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styles for desktops and larger devices */
+  .text {
+    font-size: 24px;
+  }
 }
 
 .Reach {
@@ -46,18 +77,87 @@ body{
     
 }
 
+.footer {
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+}
+
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+    color: #8f8c8c;
+    font-size: larger;
+}
+
+.footer hr {
+    margin: 1rem auto;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__text {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 10px 0;
+    }
+}
+
+
       
     </style>
 </head>
 <body>
+    <a href="index.html" class="home-btn"><img src="assets/logo.png" alt=""></a>
     <div class="container">
         <div class="text">
-            <h3>Hey there, The source code of the project you are looking for is Private.
-                <br>If you have any questions please contact me by clicking in the button below.
+            <h3>Hey there, I hope you are doing well. Unfortunately The source code of the project you are looking for is Private. <br>If you have any questions please contact with me by clicking in the button below.
             </h3>
         </div>
         <a href="mailto:connect.ayushmajumdar@gmail.com"><button class="Reach">Contact Me</button></a>
     </div>
+     <!-- Footer Section -->
+     <footer class="footer">
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Made with &hearts; by
+          <a
+            href="https://github.com/theayushmajumdar"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ayush Majumdar</a
+          >. 
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
     
 </body>
 </html>
