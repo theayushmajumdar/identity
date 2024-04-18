@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Ayush Majumdar | Portfolio</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="javascript, react.js, Fullstack Web Developer, DRDO, java, Cloud" content="Ayush Majumdar, Ayush, Software Developer" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="I am a full stack developer skilled with MERN stack, my primary focus is to improve my problem solving skills and explore new tech. I am currently learning Go and Docker." content="Ayush Majumdar | Software Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#A9A9A9" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://theayushmajumdar.vercel.app" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Ayush Majumdar | Developer" />
+    <meta property="og:description" content="Hey! Ayush Majumdar this side." />
+    
+    <meta
+      property="og:image"
+      content="https://theayushmajumdar.vercel.app/assets/portfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <meta property="twitter:url" content="https://theayushmajumdar.vercel.app" />
+
+    <meta property="twitter:title" content="Ayush Majumdar | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content=""
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://theayushmajumdar.vercel.app/assets/portfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-122228201-4")
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Ayush Majumdar</span>
+          <br />
+          I'm a Software Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/pfp.jpg"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+             
+Welcome to my digital playground! I'm Ayush Majumdar, a full-stack web developer driven by an insatiable curiosity for all things tech. Each project is an adventure, an opportunity to delve into new tech stacks and push boundaries.
+            </p>
+            <p class="about-wrapper__info-text">
+              I thrive on crafting elegant solutions, from frontend magic to backend wizardry, bringing ideas to life in the digital realm. But I'm not in this journey alone. I'm all about sharing the ride. Through public builds and open-source contributions, I'm inviting fellow enthusiasts to join me on this exhilarating quest for knowledge and innovation.
+            </p>
+            <p>
+              Currently, I'm diving headfirst into the worlds of Go and Docker. These technologies have me captivated, promising to revolutionize how we build and deploy applications. I'm eager to share my insights and experiences with others who, like me, are passionate about growth and learning. Join me, and together, let's explore the endless possibilities of the digital landscape, one line of code at a time.
+
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="exp.html" class="cta-btn cta-btn--resume">My Experience</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Personal Portfolio</h3>
+              <p class="project-wrapper__text-info">
+                A website displaying some information about me.
+                Made with the help of html, Css, Scss, javascript.
+
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/portfolio.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">I Phone14.landing</h3>
+              <p class="project-wrapper__text-info">
+                The Iphone 14 pro's web page , built with the help of React.js, three.js, WebGi and Scroll trigger.</div>
+
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project/iphone.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Ready to embark on this thrilling adventure together? Whether you're a fellow developer, a tech enthusiast, or someone with a bold idea waiting to be realized, I'm eager to connect with you. Let's explore the endless possibilities of the digital landscape and turn dreams into reality, one line of code at a time. Reach out to me and let's start building something amazing together!</p>
+          <a href="mailto:connect.ayushmajumdar@gmail.com" class="cta-btn cta-btn--resume">Let's connect</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://x.com/i_ayushmajumdar?t=ozZ534Z0QPlcqxssURWdLw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="x-twitter"
+          >
+          <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://medium.com/@theayushmajumdar"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="medium"
+          >
+            <i class="fa-brands fa-medium"></i>
+          </a>
+          
+          <a
+            href="https://www.instagram.com/theayushmajumdar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ayushmajumdar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/theayushmajumdar"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Made with &hearts; by
+          <a
+            href="https://github.com/theayushmajumdar"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ayush Majumdar</a
+          >. 
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
