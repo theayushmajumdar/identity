@@ -11,10 +11,14 @@
     referrerpolicy="no-referrer"
   />
     <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Ayush Majumdar | Experience</title>
     <style>
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"; 
 
+* { 
+    box-sizing: border-box; 
+}
 
 body {
     background-color: #333;
@@ -41,73 +45,86 @@ a {
 }
 
 
-    .timeline {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        color: #eae3e3;
-    }
-    
-    .block {
-        width: calc(50% - 20px);
-        background: #8f8c8c;
-        border: 2px solid #262020;
-        margin: 30px 0px;
-        padding: 50px;
-        position: relative;
-        border-radius: 8px;
-        text-align: center;
-        transition: .3s linear;
-    }
-    
-    .block img {
-        background-color: #8f8c8c;
-        height: 96px;
-        border-radius: 4px;
-        margin-bottom: 8px;
-    }
-    
-    .block a {
-        text-decoration: none;
-        font-weight: bold;
-        color: aliceblue;
-        border: none;
-        transition: .5s;
-    }
-    
-    .block a:hover {
-        color: #333;
-        opacity: .8;
-    }
-    
-    .block h3 {
-        color: aliceblue;
-        font-size: 20px;
-        font-weight: 500;
-    }
-    
-    .block p {
-        color: aliceblue;
-        font-size: 15px;
-    }
-
-.fa-2x {
-    font-size: 2em;
+.timeline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #eae3e3;
 }
-    
+
+.block {
+    width: calc(50% - 20px);
+    background: #8f8c8c;
+    border: 2px solid #262020;
+    margin: 30px 30px;
+    padding: 30px 20px; /* Adjust padding for smaller devices */
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s linear;
+}
+
+.block img {
+    background-color: #8f8c8c;
+    height: 72px; /* Adjust height for smaller devices */
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.block a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    transition: .5s;
+}
+
+.block a:hover {
+    color: #333;
+    opacity: .8;
+}
+
+.block h3 {
+    color: aliceblue;
+    font-size: 18px; /* Adjust font size for smaller devices */
+    font-weight: 500;
+}
+
+.block p {
+    color: aliceblue;
+    font-size: 14px; /* Adjust font size for smaller devices */
+    margin-bottom: 10px; /* Adjust margin for smaller devices */
+}
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+    .block {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Media Queries for Mobile Phones */
+@media screen and (max-width: 576px) {
+    .block {
+        width: 85%;
+        margin: 15px 0;
+    }
+}
+
+
 .footer {
-    bottom: 0;
     text-align: center;
     background-color: #333;
     padding: 4.8rem 0;
-    padding-bottom: 2rem;
 }
-.footer p{
-    color: #b3b3b3;
+p{
+    
+    transition: all 0.2s ease-in-out;
+    color: #bfbfbf;
+    font-size: 16px;
 }
-
 .footer__text a {
-    text-decoration: none;
+    font-size: 16px;
     color: #bfbfbf;
     transition: all 0.2s ease-in-out;
     display: inline-block;
@@ -122,7 +139,25 @@ a {
     width: 50%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 10px 0;
+    }
+}
+
 .back-to-top i {
+    font-size: 20px;
     color: #fff;
     margin: 1rem 0 1.6rem;
     transition: all 200ms ease;
@@ -130,17 +165,6 @@ a {
 .back-to-top i:hover {
     transform: translateY(-2px);
 }
-
-@media screen and (max-width: 768px) {
-    .footer {
-    padding: 15px 0;
-      }
-
-     .footer__text {
-    font-size: 14px;
-     }
-}
-
 
 .section-title {
     padding-top: 50px;
@@ -208,12 +232,12 @@ a {
           </a>
           
         <hr/>
-          <p class="footer__text" style="size: 140px;">
+          <p class="footer__text">
             &copy; <span id="year"></span> - Made with &hearts; by
             <a
               href="./"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" style="14px"
               >Ayush Majumdar</a>
           </p>
         </div>
