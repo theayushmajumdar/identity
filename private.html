@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/logo.png" />
     <title>Ayush | Project-Source Code</title>
+    <link rel="stylesheet" href="./css/main.css" />
     <style>
 
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";
 * { 
     box-sizing: border-box; 
 }
@@ -78,36 +80,28 @@ body {
 }
 
 .footer {
-        bottom: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
+    background-color: #333;
+    padding: 4.8rem 0;
 }
-
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
+.footer__text {
+    size: 14px;
+    color: #b3b3b3;
 }
-
-.footer a:hover {
-    color: #8f8c8c;
-    font-size: larger;
+.footer__text a {
+    color: #bfbfbf;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
 }
-
+.footer__text a:hover,
+.footer__text a:active {
+    color: #36d1dc;
+}
 .footer hr {
     margin: 1rem auto;
     border: 0;
     width: 50%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-
-.footer__text {
-  margin-top: 20px;
-}
-
 @media screen and (max-width: 768px) {
   .footer {
     padding: 15px 0;
@@ -146,6 +140,7 @@ body {
     </div>
      <!-- Footer Section -->
      <footer class="footer">
+      <hr>
         <p class="footer__text">
           &copy; <span id="year"></span> - Made with &hearts; by
           <a
@@ -153,11 +148,14 @@ body {
             target="_blank"
             rel="noopener noreferrer"
             >Ayush Majumdar</a
-          >. 
+          >
         </p>
       </div>
     </footer>
     <!-- END Footer Section -->
     
 </body>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear()
+</script>
 </html>

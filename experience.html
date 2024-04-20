@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="icon" type="image/png" href="./assets/logo.png" />
     <title>Ayush Majumdar | Experience</title>
     <style>
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"; 
+
 
 body {
     background-color: #333;
@@ -24,10 +33,7 @@ body {
     align-items: center;
 }
 
-   .section-title {
-    color: aliceblue;
-    text-align: center;
-}
+
     .timeline {
         display: flex;
         justify-content: center;
@@ -39,8 +45,8 @@ body {
         width: calc(50% - 20px);
         background: #8f8c8c;
         border: 2px solid #262020;
-        margin: 10px 0;
-        padding: 24px;
+        margin: 30px 0px;
+        padding: 50px;
         position: relative;
         border-radius: 8px;
         text-align: center;
@@ -77,34 +83,40 @@ body {
         font-size: 15px;
     }
     
-    .footer {
-        bottom: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
+.footer {
+    text-align: center;
+    background-color: #333;
+    padding: 4.8rem 0;
+    padding-bottom: 2rem;
+}
+.footer p{
+    font-size: 17px;
+    color: #b3b3b3;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: none;
+.footer__text a {
+    text-decoration: none;
+    color: #bfbfbf;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
 }
-
-.footer a:hover {
-    color: #8f8c8c;
-    font-size: larger;
+.footer__text a:hover,
+.footer__text a:active {
+    color: #36d1dc;
 }
-
 .footer hr {
     margin: 1rem auto;
     border: 0;
     width: 50%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-
-.footer__text {
-  margin-top: 20px;
+.back-to-top i {
+    color: #fff;
+    margin: 1rem 0 1.6rem;
+    transition: all 200ms ease;
+}
+.back-to-top i:hover {
+    transform: translateY(-2px);
 }
 
 @media screen and (max-width: 768px) {
@@ -118,16 +130,41 @@ body {
 }
 
 
+.section-title {
+    padding-top: 50px;
+    margin-bottom: 4.5rem;
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 37.5em) {
+    .section-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 37.5em) {
+    .section-title {
+        padding: auto;
+        font-size: 2.8rem;
+    }
+}
+
+
 
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="home-btn"><img src="assets/logo.png" alt=""></a>
+    <a href="index.html" class="home-btn" title="Go to Homepage">
+        <img src="assets/logo.png" alt="Ayush Majumdar's Portfolio">
+    </a>
 
     <section id="experience">
         <div class="inner-width">
-            <h1 class="section-title">Experience :</h1>
+            <h2 class="section-title dark-blue-text">Experiences</h2>
     
             <div class="timeline">
                 <!--DRDO -->
@@ -153,18 +190,25 @@ body {
 
      <!-- Footer Section -->
      <footer class="footer">
-          <p class="footer__text">
+
+        <a href="#experience" class="back-to-top" aria-label="go back to top">
+            <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+          </a>
+          
+        <hr/>
+          <p class="footer__text" style="size: 140px;">
             &copy; <span id="year"></span> - Made with &hearts; by
             <a
               href="https://github.com/theayushmajumdar"
               target="_blank"
               rel="noopener noreferrer"
-              >Ayush Majumdar</a
-            >. 
+              >Ayush Majumdar</a>
           </p>
         </div>
       </footer>
       <!-- END Footer Section -->
-    
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear()
+      </script>
 </body>
 </html>
