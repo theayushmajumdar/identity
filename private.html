@@ -37,15 +37,21 @@ a {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    text-align: left;
 }
 
 .text {
+  
     color: aliceblue;
     text-align: left;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.text a{
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -67,23 +73,6 @@ a {
   .text {
     font-size: 24px;
   }
-}
-
-.Reach {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #686a6d;
-    color: aliceblue;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.Reach:hover {
-    background-color: #8a909a;
-    color: #000;
-    
 }
 
 .footer {
@@ -142,9 +131,10 @@ a {
         <div class="text">
             <h3>Hey there, I hope you are doing well. Unfortunately the source code of the project you are looking for is private. <br>If you have any questions please contact with me by clicking in the button below.
             </h3>
-        </div>
-        <a href="mailto:connect.ayushmajumdar@gmail.com"><button class="Reach">Contact Me</button></a>
-    </div>
+        
+        <a href="mailto:connect.ayushmajumdar@gmail.com" class="cta-btn cta-btn--resume">Contact Me</a>
+      </div>
+      </div>
      <!-- Footer Section -->
      <footer class="footer">
       <hr>
