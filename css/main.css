@@ -336,6 +336,7 @@ section .row span {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     padding-bottom: 10%;
+    text-align: left;
 }
 @media (max-width: 75em) {
     #about {
@@ -385,7 +386,7 @@ section .row span {
 @media (max-width: 48em) {
     #about .about-wrapper__info {
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 }
 #contact {
@@ -417,11 +418,13 @@ section .row span {
 #contact .contact-wrapper__text,
 #contact .contact-wrapper a {
     font-size: 2.4rem;
+    text-align: left;
 }
 @media (max-width: 37.5em) {
     #contact .contact-wrapper__text,
     #contact .contact-wrapper a {
         font-size: 2rem;
+        text-align: left;
     }
 }
 #hero {
