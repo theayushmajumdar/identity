@@ -439,7 +439,19 @@ section .row span {
     right: 0;
     z-index: -1;
     line-height: 1.2;
+    opacity: 0;
     animation: hidden 1000ms linear forwards;
+}
+@keyframes hidden {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media (max-width: 56.25em) {
     #hero {
@@ -499,6 +511,24 @@ section .row span {
         font-size: 2rem;
     }
 }
+
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+
 .scroll-down-link {
     position: absolute;
     left: 50%;
@@ -530,32 +560,7 @@ section .row span {
     top: 30%;
     animation-delay: 0.3s;
 }
-@keyframes hidden {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes scroll-down {
-    0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        top: 90%;
-    }
-}
+
 #projects {
     background-color: #e5e5e5;
     color: #272341;
